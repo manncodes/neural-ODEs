@@ -24,7 +24,7 @@ class TanhFixedPointLayer(nn.Module):
             self.err = torch.norm(z - z_next)
             z = z_next
             self.iterations += 1
-            print(f"Iteration #{self.iterations} \t\t\t\t error = {self.err}")
+            # print(f"Iteration #{self.iterations} \t\t\t\t error = {self.err}")
             if self.err < self.tolerance:
                 break
 
